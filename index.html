@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfiePoint</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+</head>
+
+<body>
+
+    <div id="hearts-container"></div>
+
+    <div class="app">
+
+        <div class="top-bar">
+            <h2>✨ SelfiePoint</h2>
+            <button id="switch-camera">🔄</button>
+        </div>
+
+        <div class="camera-box">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <canvas id="overlay"></canvas>
+            <pre id="ascii-output"></pre>
+        </div>
+
+        <div class="filters-wrapper">
+
+            <div class="filters" id="filters">
+
+                <button class="filter-btn active" onclick="setFilter(this,'none')">✨<span>Normal</span></button>
+
+                <button class="filter-btn"
+                    onclick="setFilter(this,'brightness(1.2) saturate(1.4)')">🌸<span>Glow</span></button>
+
+                <button class="filter-btn" onclick="setFilter(this,'sepia(0.7)')">📸<span>Vintage</span></button>
+
+                <button class="filter-btn"
+                    onclick="setFilter(this,'contrast(1.3) saturate(1.8)')">💖<span>Insta</span></button>
+
+                <button class="filter-btn" onclick="setFilter(this,'grayscale(1)')">🖤<span>B&W</span></button>
+
+                <button class="filter-btn"
+                    onclick="setFilter(this,'blur(1px) brightness(1.1)')">☁<span>Soft</span></button>
+
+                <button class="filter-btn" onclick="setFilter(this,'contrast(2)')">🎬<span>Drama</span></button>
+
+                <!-- HEART -->
+                <button class="filter-btn" onclick="setFilter(this,'heart')">💖<span>Hearts</span></button>
+
+                <!-- ASCII -->
+                <button class="filter-btn" onclick="setFilter(this,'ascii')">⌨️<span>ASCII</span></button>
+
+                <!-- X-RAY -->
+                <button class="filter-btn" onclick="setFilter(this,'invert(1) contrast(1.4)')">
+                    ☢️<span>X-Ray</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+
+            <button id="capture-btn">
+                <div class="inner-circle"></div>
+            </button>
+
+            <!-- ✅ NEW DOWNLOAD BOX -->
+            <div id="download-box">
+                <span id="download-label">Download</span>
+                <img id="preview-img" />
+                <div id="check-icon">✅</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -175,7 +175,7 @@ canvas {
     gap: 40px;
     padding: 25px;
     background: black;
-    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    padding-bottom: calc(25px + env(safe-area-inset-bottom));
 }
 
 #capture-btn {

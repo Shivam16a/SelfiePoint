@@ -191,15 +191,20 @@ Contributions are welcome!
 
 **Shivam Kumar**
 
-- GitHub: https://github.com/Shivam16A
+- GitHub: https://github.com/Shivam16a/SelfiePoint
 - Live Demo: https://shivam16a.github.io/SelfiePoint/
 
 ---
 
-<p align="center">
-⭐ If you like this project, don't forget to **Star** the repository.
+## 📸 Screenshots
+### Home Screen
+![Home](assets/image.png)
+### X-Ray Filter
+![X-Ray](assets/image%20copy.png)
+---
 
-It helps support future development.
+<p align="center">
+⭐ If you like this project, don't forget to **Star** the repository. It helps support future development.
 </p>
 
 <p align="center">

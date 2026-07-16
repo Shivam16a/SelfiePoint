@@ -187,22 +187,6 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## ⭐ Support
-
-If you like this project, don't forget to **Star** the repository.
-
-It helps support future development.
-
----
-
----
-
 ## 👨‍💻 Author
 
 **Shivam Kumar**
@@ -213,7 +197,9 @@ It helps support future development.
 ---
 
 <p align="center">
-⭐ If you like this project, please give it a Star!
+⭐ If you like this project, don't forget to **Star** the repository.
+
+It helps support future development.
 </p>
 
 <p align="center">
